@@ -29,7 +29,8 @@
 				
 					<!-- FORM ELEMENTS -->
 					<sf:form class="form-horizontal" modelAttribute="product"
-					action="${contextRoot}/manage/products" method="POST">
+					action="${contextRoot}/manage/products" method="POST"
+					enctype="multipart/form-data">
 					
 						<div class="form-group">
 					
@@ -98,6 +99,19 @@
 						
 						<div class="form-group">
 					
+							<label class="control-label col-md-4" for="file">Select an Image:</label>
+							
+							<div class="col-md-8">
+							
+								<sf:input type="file" id="file" path="file" class="form-control"/>
+								
+								
+							</div>
+						
+						</div>
+						
+						<div class="form-group">
+					
 							<label class="control-label col-md-4" for="categoryId">Select Category:</label>
 							
 							<sf:select class="form-control" id="categoryId" path="categoryId"
@@ -123,10 +137,10 @@
 							</div>
 						
 						</div>
-						<br><br><br><br>
+						
 					</sf:form>
 				
-				
+					
 				</div>
 			
 			</div>
@@ -134,5 +148,5 @@
 		</div>
 	
 	</div>
-
+	<br><br><br><br><br><br><br>
 </div>
