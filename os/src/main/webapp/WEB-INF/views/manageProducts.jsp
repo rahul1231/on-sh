@@ -64,7 +64,7 @@
 							
 							<div class="col-md-8">
 							
-								<sf:textarea id="description" path="description" class="form-control"/>
+								<sf:textarea id="description" path="description" placeholder="Product Description" class="form-control"/>
 								<sf:errors path="description" cssClass="help-block" element="em"/>
 							
 							</div>
@@ -104,7 +104,7 @@
 							<div class="col-md-8">
 							
 								<sf:input type="file" id="file" path="file" class="form-control"/>
-								
+								<sf:errors path="file" cssClass="help-block" element="em"/>
 								
 							</div>
 						
@@ -148,5 +148,108 @@
 		</div>
 	
 	</div>
+	
+	<div class="row">
+	
+		<div class="col-lg-12 col-xs-12">
+		
+			<h3>Available Products</h3>
+		
+		</div>
+		
+		<div class="col-lg-12 col-xs-12">
+		
+			<div style="overflow:auto">
+			
+				<table id="adminProductsTable" class="table table-striped table-bordered">
+				
+					<thead>
+					
+						<tr>
+							<td>ID</td>
+							<td>&nbsp;</td>
+							<td>Name</td>
+							<td>Quantity</td>
+							<td>Unit Price</td>
+							<td>Active</td>
+							<td>Edit</td>
+						</tr>
+					
+					</thead>
+					
+					<tbody>
+					
+						<tr>
+							<td>36</td>
+							<td>
+								
+								<img class="adminDataTableImg" src="${contextRoot}/resources/images/PRD8417E7F4D4.png"
+								alt="Asus"/>
+							
+							</td>
+							<td>ASUS Laptop G9</td>
+							<td>6</td>
+							<td>50000</td>
+							<td>
+								<label class="switch">
+  									<input type="checkbox" checked="checked" value="6"/>
+  									<span class="slider round"></span>
+								</label>
+							</td>
+							<td>
+								<a href="${contextRoot}/manage/6/product" class="btn btn-warning">
+									<span class="fa fa-pencil"></span>
+								</a>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>36</td>
+							<td>
+								
+								<img class="adminDataTableImg" src="${contextRoot}/resources/images/PRD8417E7F4D4.png"
+								alt="Asus"/>
+							
+							</td>
+							<td>ASUS Laptop G9</td>
+							<td>6</td>
+							<td>50000</td>
+							<td>
+								<label class="switch">
+  									<input type="checkbox" value="6"/>
+  									<span class="slider round"></span>
+								</label>
+							</td>
+							<td>
+								<a href="${contextRoot}/manage/6/product" class="btn btn-warning">
+									<span class="fa fa-pencil"></span>
+								</a>
+							</td>
+						</tr>
+					
+					</tbody>
+					
+					<tfoot>
+					
+						<tr>
+							<td>ID</td>
+							<td>&nbsp;</td>
+							<td>Name</td>
+							<td>Quantity</td>
+							<td>Unit Price</td>
+							<td>Active</td>
+							<td>Edit</td>
+						</tr>
+					
+					</tfoot>
+				
+				</table>
+			
+			</div>
+		
+		</div>
+		
+	</div>
+	
 	<br><br><br><br><br><br><br>
 </div>

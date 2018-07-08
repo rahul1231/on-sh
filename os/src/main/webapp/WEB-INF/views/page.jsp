@@ -89,6 +89,8 @@
 		<!-- Datatable plugin -->
 		<script src="${js}/jquery.dataTables.js"></script>
 		
+		<!-- Bootbox -->
+		<script src="${js}/bootbox.min.js"></script>
 		
 		<!-- Self coded js -->
 		<script src="${js}/myapp.js"></script>

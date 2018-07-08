@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import net.rah.os.util.FileUploadUtility;
+import net.rah.os.validator.ProductValidator;
 import net.rah.osbackend.dao.CategoryDAO;
 import net.rah.osbackend.dao.ProductDAO;
 import net.rah.osbackend.dto.Category;
@@ -67,6 +68,8 @@ public class ManagementContoller {
 	
 	@RequestMapping(value="/products",method=RequestMethod.POST)
 	public String handleProductSubmission(@Valid @ModelAttribute("product")Product mProduct,BindingResult results,Model model,HttpServletRequest request) {
+		
+		new ProductValidator().validate(mProduct,results);
 		
 		if(results.hasErrors()) {
 			model.addAttribute("title","Manage Products");
