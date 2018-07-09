@@ -137,10 +137,10 @@ public class ManagementContoller {
 		productDAO.update(product);
 		
 		return (isActive)? "You have successfully deactivated the product with id "+product.getId():
-						  "You have successfully deactivated the product with id "+product.getId();	
+						  "You have successfully activated the product with id "+product.getId();	
 	}
 	
-	@RequestMapping(value="/{id}/product")
+	@RequestMapping(value="/{id}/product",method=RequestMethod.GET)
 	public ModelAndView showEditProduct(@PathVariable int id) {
 		
 		ModelAndView mv=new ModelAndView("page");

@@ -22,7 +22,7 @@
 		
 			<div class="thumbnail">
 			
-				<img src="${images}/${product.code}.png" class="img img-responsive"/>
+				<img src="${images}/${product.code}.png" class="img img-responsive" width="300px" height="300px"/>
 			
 			</div>
 		

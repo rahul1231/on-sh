@@ -226,8 +226,44 @@ var $adminProductsTable=$('#adminProductsTable');
 		});
 	}
 	
+	//categoryForm validation
+	var $categoryForm=$('#categoryForm');
 	
-	
+	if($categoryForm.length){
+		
+		$categoryForm.validate({
+			
+			rules:{
+				name:{
+					required:true,
+					minlength:2
+				},
+				description:{
+					required:true
+					
+				}
+			},
+			messages:{
+				name:{
+					required:'Please add the category name!',
+					minLength:'Category name cannot be less than 2 characters!'
+				},
+				description:{
+					required:'Please enter the category description!'
+				}
+				
+			},
+			errorElement:'em',
+			errorPlacement:function(error,element){
+				//add the class of help-block
+				error.addClass('help-block');
+				//insert the error element after the input element
+				error.insertAfter(element);
+			}
+			
+		});
+		
+	}
 	
 
 });
