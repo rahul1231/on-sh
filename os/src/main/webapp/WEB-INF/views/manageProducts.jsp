@@ -168,6 +168,7 @@
 						<tr>
 							<td>ID</td>
 							<td>&nbsp;</td>
+							<td>Brand</td>
 							<td>Name</td>
 							<td>Quantity</td>
 							<td>Unit Price</td>
@@ -177,63 +178,12 @@
 					
 					</thead>
 					
-					<tbody>
-					
-						<tr>
-							<td>36</td>
-							<td>
-								
-								<img class="adminDataTableImg" src="${contextRoot}/resources/images/PRD8417E7F4D4.png"
-								alt="Asus"/>
-							
-							</td>
-							<td>ASUS Laptop G9</td>
-							<td>6</td>
-							<td>50000</td>
-							<td>
-								<label class="switch">
-  									<input type="checkbox" checked="checked" value="6"/>
-  									<span class="slider round"></span>
-								</label>
-							</td>
-							<td>
-								<a href="${contextRoot}/manage/6/product" class="btn btn-warning">
-									<span class="fa fa-pencil"></span>
-								</a>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>36</td>
-							<td>
-								
-								<img class="adminDataTableImg" src="${contextRoot}/resources/images/PRD8417E7F4D4.png"
-								alt="Asus"/>
-							
-							</td>
-							<td>ASUS Laptop G9</td>
-							<td>6</td>
-							<td>50000</td>
-							<td>
-								<label class="switch">
-  									<input type="checkbox" value="6"/>
-  									<span class="slider round"></span>
-								</label>
-							</td>
-							<td>
-								<a href="${contextRoot}/manage/6/product" class="btn btn-warning">
-									<span class="fa fa-pencil"></span>
-								</a>
-							</td>
-						</tr>
-					
-					</tbody>
-					
 					<tfoot>
 					
 						<tr>
 							<td>ID</td>
 							<td>&nbsp;</td>
+							<td>Brand</td>
 							<td>Name</td>
 							<td>Quantity</td>
 							<td>Unit Price</td>
