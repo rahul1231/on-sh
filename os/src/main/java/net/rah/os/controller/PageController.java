@@ -129,7 +129,7 @@ public class PageController {
 	}
 	
 	@RequestMapping(value="/show/{id}/product")
-	public ModelAndView showSinglePoduct(@PathVariable int id) throws ProductNotFoundException {
+	public ModelAndView showSingleProduct(@PathVariable int id) throws ProductNotFoundException {
 		
 		ModelAndView mv=new ModelAndView("page");
 		
