@@ -63,7 +63,7 @@ public class UserTestCase {
 			
 			//add a cart
 			cart=new Cart();
-			cart.setUserId(user.getId());
+			cart.setUser(user);
 			
 			//add the cart
 			assertEquals("Failure!!!",true,userDAO.addCart(cart));
