@@ -109,3 +109,13 @@ input:checked + .slider:before {
 	width:50px;
 }
 
+.confirmPosition{
+	position:relative;
+	left:790px;
+}
+
+.confirmPosition1
+{
+	position:relative;
+	left:400px;
+}
