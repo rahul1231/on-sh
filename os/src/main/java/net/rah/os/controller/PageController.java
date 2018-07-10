@@ -151,4 +151,15 @@ public class PageController {
 		
 	}
 	
+	@RequestMapping("/register")
+	public ModelAndView register() {
+		
+		ModelAndView mv=new ModelAndView("page");
+		
+		mv.addObject("title","About Us");
+		
+		return mv;
+		
+	}
+	
 }
